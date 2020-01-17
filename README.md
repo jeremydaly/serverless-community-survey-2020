@@ -1,4 +1,4 @@
-# Serverless Community Survey
+# Serverless Community Survey - DRAFT
 
 The serverless landscape is constantly evolving, and trying to keep up with the latest innovations and trends is a daunting task. As someone who loves building things with serverless (and sharing that knowledge with others), I wanted to get a better understanding of the serverless community. I find it incredibly helpful to understand how others use serverless, what they are building with it, and the challeges they are facing.
 
