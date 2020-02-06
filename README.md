@@ -2,6 +2,8 @@
 
 The serverless landscape is constantly evolving, and trying to keep up with the latest innovations and trends is a daunting task. As someone who loves building things with serverless (and sharing that knowledge with others), I wanted to get a better understanding of the serverless community. I find it incredibly helpful to understand how others use serverless, what they are building with it, and the challeges they are facing.
 
+**UPDATE:** There has been a tremendous amount of feedback and I'm working with some others to incorporate it all. We've pushed the release back a week to **Feburary 11th, 2020**!
+
 ### So what's the deal with this survey?
 
 There have been several great serverless surveys, but I wanted to create one **for** the community, **by** the community. What questions do **YOU** want answered? How can the answers to these questions help you further the goal of serverless adoption, either in your organization, or for customers of your product? 
@@ -18,7 +20,7 @@ I will also feature the survey in the [Off-by-none](https://offbynone.io) newsle
 Below there are some sample/possible questions. Please feel free to suggest new questions, add or change answers to existing ones, or tell me that some of these questions don't make any sense! You can add an [ISSUE](https://github.com/jeremydaly/serverless-community-survey-2020/issues), send an email to contact[at]jeremydaly.com, or DM me on Twitter ([@jeremy_daly](https://twitter.com/jeremy_daly)).
 
 ### When will this survey go live?
-I'm shooting for a go live date of **Feburary 4th, 2020**, and the survey will run for **four weeks**.
+I'm shooting for a go live date of ~~**Feburary 4th, 2020**~~ **Feburary 11th, 2020**, and the survey will run for **four weeks**.
 
 ## Possible Questions
 Below are a list of possible questions to ask respondents. This is where I **NEED YOUR HELP!** These are just some ideas that I had with some possible answer, but there are many more questions that could be asked. Your feedback is critical to making this survey a success.
