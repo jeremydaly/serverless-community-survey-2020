@@ -133,6 +133,7 @@ Also, the questions below are in no particular order, so the final survey will f
 - New Relic
 - Lumigo
 - Splunk
+- Azure Applications Insights
 - Other: ____________
 
 ### 10. What security solution do you use for your serverless applications?
@@ -172,9 +173,16 @@ Also, the questions below are in no particular order, so the final survey will f
 - FaunaDB
 - Aurora Serverless
 - CouchBase
+- Azure Cosmos DB
 - Other: ____
 
-### 14. Which of the following use cases do you use serverless for?
+### 14. What frameworks and tools are you using for orchestration and workflows?
+- Azure Durable Functions
+- Azure Logic Apps
+- AWS Step Functions
+- Other: ____
+
+### 15. Which of the following use cases do you use serverless for?
 - REST APIs
 - GraphQL
 - ETL/Data Processing tasks
@@ -188,7 +196,7 @@ Also, the questions below are in no particular order, so the final survey will f
 - Other: ________
 
 
-### 15. What do think about the amount of educational materials available for serverless?
+### 16. What do think about the amount of educational materials available for serverless?
 - Not nearly enough
 - Some, but very scattered
 - Some, but easily accessible
@@ -197,23 +205,23 @@ Also, the questions below are in no particular order, so the final survey will f
 - Too much
 - No opinion
 
-### 16. How likely are you to build a serverless application in the next 6 months?
+### 17. How likely are you to build a serverless application in the next 6 months?
 - Very likely
 - Somewhat likely
 - Somewhat unlikely
 - Very unlikely
 
-### 17. How would you define “multi-cloud”?
+### 18. How would you define “multi-cloud”?
 - Running multiple copies of your application in different public cloud providers
 - Running different applications in separate public clouds
 - Running cloud agnostic applications that can be ported between clouds
 - Running applications that utilize different cloud/SaaS providers (e.g. Stripe, Twilio)
 - Other: ______
 
-### 18. How many serverless applications are you running in production?
+### 19. How many serverless applications are you running in production?
 [enter number]
 
-### 19. Which roles in your organization decide on creating new services using serverless?
+### 20. Which roles in your organization decide on creating new services using serverless?
 - Developer
 - DevOps
 - Team Lead
@@ -222,21 +230,21 @@ Also, the questions below are in no particular order, so the final survey will f
 - CTO
 - Other:____
 
-### 20. How were you affected by AWS Lambda’s Provisioned Concurrency Announcement?
+### 21. How were you affected by AWS Lambda’s Provisioned Concurrency Announcement?
 - Not affected
 - Somewhat affected
 - It changed the way I work
 - It had a big impact on my job
 - I didn't know about it
 
-### 21. Did the latest improvements to AWS Lambdas in VPCs affect your opinion of Lambda and/or Serverless?
+### 22. Did the latest improvements to AWS Lambdas in VPCs affect your opinion of Lambda and/or Serverless?
 - Not at all
 - Somewhat affected
 - Had a significant effect
 - Changed my mind
 - I wasn't aware of it
 
-### 22. What is the primary language your organization uses to develop serverless applications?
+### 23. What is the primary language your organization uses to develop serverless applications?
 - Node.js
 - Python
 - Go
@@ -246,7 +254,7 @@ Also, the questions below are in no particular order, so the final survey will f
 - C#
 - Other:____
 
-### 23. What other languages does your organization use to develop serverless applications?
+### 24. What other languages does your organization use to develop serverless applications?
 - Node.js
 - Python
 - Go
@@ -257,7 +265,7 @@ Also, the questions below are in no particular order, so the final survey will f
 - Other:____
 
 
-### 24. How would you define your organization?
+### 25. How would you define your organization?
 - Enterprise
 - Medium-sized
 - Small business
@@ -265,7 +273,7 @@ Also, the questions below are in no particular order, so the final survey will f
 - Side project/bootstrapped
 
 
-### 25. How many employees are there in your organization?
+### 26. How many employees are there in your organization?
 - Just me
 - 2-10
 - 11-50
@@ -275,20 +283,20 @@ Also, the questions below are in no particular order, so the final survey will f
 - 501-1000
 - More than 1,000
 
-### 26. What is your title?
+### 27. What is your title?
 [enter text]
 
-### 27. What is your company name? (not to be shared with results)
+### 28. What is your company name? (not to be shared with results)
 [enter text]
 
-### 28. How long has your company/organization been in business?
+### 29. How long has your company/organization been in business?
 - Less than a year
 - 1 to 2 years
 - 2 to 5 years
 - 5 to 10 years
 - More than 10 years
 
-### 29. In which industry is your business?
+### 30. In which industry is your business?
 - Software & Internet
 - Retail
 - Media
@@ -306,10 +314,10 @@ Also, the questions below are in no particular order, so the final survey will f
 - Manufacturing
 - Other:_____
 
-### 30. Does your company serve consumers, businesses, or both?
+### 31. Does your company serve consumers, businesses, or both?
 - Consumers
 - Businesses
 - Both
 
-### 31. What features are missing from serverless?
+### 32. What features are missing from serverless?
 *Open-ended or should this be a list?*
