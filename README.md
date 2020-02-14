@@ -133,7 +133,7 @@ Also, the questions below are in no particular order, so the final survey will f
 - New Relic
 - Lumigo
 - Splunk
-- Azure Applications Insights
+- Azure Application Insights
 - Other: ____________
 
 ### 10. What security solution do you use for your serverless applications?
