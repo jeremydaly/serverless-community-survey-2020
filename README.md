@@ -2,7 +2,7 @@
 
 The serverless landscape is constantly evolving, and trying to keep up with the latest innovations and trends is a daunting task. As someone who loves building things with serverless (and sharing that knowledge with others), I wanted to get a better understanding of the serverless community. I find it incredibly helpful to understand how others use serverless, what they are building with it, and the challeges they are facing.
 
-**UPDATE:** There has been a tremendous amount of feedback and I'm working with some others to incorporate it all. We've pushed the release back a week to **Feburary 11th, 2020**!
+**UPDATE:** There has been a tremendous amount of feedback and I'm working with some others to incorporate it all. We've pushed the release back and are hoping to launch soon!
 
 ### So what's the deal with this survey?
 
@@ -20,17 +20,19 @@ I will also feature the survey in the [Off-by-none](https://offbynone.io) newsle
 Below there are some sample/possible questions. Please feel free to suggest new questions, add or change answers to existing ones, or tell me that some of these questions don't make any sense! You can add an [ISSUE](https://github.com/jeremydaly/serverless-community-survey-2020/issues), send an email to contact[at]jeremydaly.com, or DM me on Twitter ([@jeremy_daly](https://twitter.com/jeremy_daly)).
 
 ### When will this survey go live?
-I'm shooting for a go live date of ~~**Feburary 4th, 2020**~~ **Feburary 11th, 2020**, and the survey will run for **four weeks**.
+**SOON!** I was shooting for a go live date in early **Feburary 2020**, but due to all the feedback, we've pushed it back a bit. The survey will run for **four weeks**.
 
-## Possible Questions
-Below are a list of possible questions to ask respondents. This is where I **NEED YOUR HELP!** These are just some ideas that I had with some possible answer, but there are many more questions that could be asked. Your feedback is critical to making this survey a success.
+# Survey Questions
+Below is the **close-to-final** list of questions to ask respondents. This is where I **NEED YOUR HELP!** I have gathered *a lot* of feedback and incorporated as much as I could. Please take a look at these questions and post a new issue if you have any further feedback.
 
-As I get feedback, I'll update the questions and answers. Please do not submit PRs, it'll be too hard to manage.
+## Cloud Posture
 
-Also, the questions below are in no particular order, so the final survey will flow better than this list.
+### How would you describe your organization’s maturity using serverless?
+- High: We're all in on serverless
+- Medium: We're transitioning to serverless
+- Low: We're at the early stages experimenting with serverless or don’t know
 
-
-### 1. Which public cloud providers do you use?
+### Which public cloud providers do you use?
 - Amazon Web Services
 - Alibaba
 - Cloudflare
@@ -40,46 +42,101 @@ Also, the questions below are in no particular order, so the final survey will f
 - Oracle Cloud
 - Rackspace
 - Tencent
-- Other: ______________
-- None
+- Other (please specify): ______________
+- None/On-Prem
 
-### 2. How long has your organization been running production applications in the cloud?
+### How long has your organization been running production applications in the cloud?
 - Less than 6 months
 - 6 months to a year
 - 1 to 2 years
 - 3 or more years
 - We do not run production application in the cloud
 
-### 3. How would you describe your current level of serverless usage?
-- I *only* work on serverless projects
-- I mostly work on serverless projects, but sometimes need to do other non-serverless projects
-- I work on serverless sometimes, but mostly focus on non-serverless projects
-- I only use it for personal projects, but not at my job
-- I don’t use serverless at all
+### What percentage of your production workloads utilize serverless (FaaS or Managed Services) in a public cloud environment?
+- 0%
+- 1-5%
+- 6-10%
+- 11-20%
+- 21-30%
+- 31-40%
+- 41-50%
+- Greater than 50%
+- Don’t know
+ 
+### What percentage of your production workloads utilize serverless (FaaS or Managed Services) in an on-premises environment?
+- 0%
+- 1-5%
+- 6-10%
+- 11-20%
+- 21-30%
+- 31-40%
+- 41-50%
+- Greater than 50%
+- Don’t know
 
-### 4. Before using serverless, what was your level of experience with the public cloud?
+### How many serverless functions (FaaS) are you currently running in production?
+- 0
+- 1-10
+- 11-50
+- 51-100
+- 101-250
+- 251-500
+- Greater than 500
+
+### How many distinct managed services (e.g. AWS SQS, Google Cloud Firestore, Event Hubs) are you currently using in production environments?
+- 0
+- 1-5
+- 6-10
+- 11-15
+- 16-20
+- 21-25
+- More than 25
+
+### Before using serverless, what was your organization’s level of experience with the public cloud?
 - I had used multiple public clouds to run production workloads
 - I had used a single public cloud provider to run a production workload
 - I had used the public cloud in a limited capacity
 - I had never used the public cloud before
 
-### 5. Which FaaS (Functions as a Service) products do you use?
-- AWS Lambda
+### How would you define your “multi-cloud” strategy?
+- Agnostic Portability
+- Full Parity
+- Platform Diversity
+- Availability of Differentiated Services
+- Other (please specify): __________
+- None / Not Applicable
+
+## Application Characteristics
+
+### Which FaaS (Functions as a Service) products do you use?
+*Use scale: Using, Planning to use in the next 12 months, Not Using/Not Planning to Use, Don’t Know*
+- Adobe I/O
 - Alibaba Cloud Function
-- Azure Funtions
+- Apache OpenWhisk
+- AWS Lambda
+- Azure Functions
+- Binaris
+- Clay
+- CloudBoost
 - CloudFlare Workers
+- FN Project
 - Google Cloud Functions
+- Huawei Functions
+- Hyper Func
 - IBM Cloud Functions
+- Knative
 - Kubeless
+- Nano Lambda
+- Netlify
+- Nuweba
 - OpenFaas
 - Oracle Functions
-- FN Project
-- Knative
-- Alibaba Cloud
+- PubNub Functions
 - Spotinst Functions
-- Other:
+- Other (please specify): ____________
 
-### 6. Which container-based products do you use?
+### Which container-based products do you use?
+*Use scale: Using, Planning to use in the next 12 months, Not Using/Not Planning to Use, Don’t Know*
 - Alibaba Container Service for Kubernetes
 - AWS Fargate
 - AWS ECS
@@ -91,36 +148,144 @@ Also, the questions below are in no particular order, so the final survey will f
 - Red Hat OpenShift Container Platform
 - Oracle Cloud Infrastructure Container Engine for Kubernetes
 - Kubernetes
-- Other:
+- Other (please specify): ____________
 
-### 7. Which managed services do you use?
-*NOTE: This could be a long list. Is there a better way to ask this?*
+### Which categories of managed services are you currently using in production? (Check all that apply)
+- Analytics
+- API Routing/GraphQL
+- Cost Management
+- Customer Engagement
+- Database
+- Event Bus/Messaging
+- Internet of Things
+- Machine Learning
+- Management & Governance
+- Media Services
+- Mobile
+- Networking & Content Delivery
+- Orchestration
+- Security, Identity, & Compliance
+- Storage
+- Other (please specify): ____________
+- None
 
-### 8. Which framework(s)/services do you currently use with serverless?
+### Which framework(s)/services do you currently use with serverless? (Check all that apply)
+- Apex Framework
 - Architect
 - AWS Amplify
 - AWS CDK
-- Serverless Application Model (SAM)
-- Serverless Framework
-- Kappa
-- Sparta
-- Apex Framework
-- Terraform
-- Gordon
-- Stackery
-- ClaudiaJS
-- Zappa
+- AWS Serverless Application Model (SAM)
 - Chalice
-- Apex
+- ClaudiaJS
+- Gordon
+- Kappa
+- Pulumi
+- Serverless Framework
+- Serverless Framework Pro
+- Sparta
+- Stackery
+- Terraform
+- Zappa
 - A custom framework
 - None
-- Other:______
+- Other (please specify): ___________
 
+### Which datastores do you integrate with your serverless applications?
+- DynamoDB
+- Cosmo DB
+- Cassandra
+- Google Cloud SQL
+- BigTable
+- Firestore
+- FaunaDB
+- Aurora Serverless
+- Open-Source RDBMS (MySQL, PostgreSQL, etc.)
+- CouchBase
+- MongoDB
+- Oracle
+- Microsoft SQL Server
+- Other (please specify): ____________
 
-### 9. Which services and/or tools do you use to monitor your serverless applications?
+### Which of the following use cases do you use serverless for?
+- REST APIs
+- GraphQL
+- ETL/Data/Batch Processing Tasks
+- DevOps/Operational tasks
+- Internet of Things (IoT)
+- Business Logic
+- Continuous Integration (CI)
+- Mobile Backends
+- Multimedia Processing
+- 3rd-party Service Integration
+- Security Automation
+- Single Page Applications (SPAs)
+- Chatbots
+- Edge computing
+- Stream Processing
+- Change Data Capture (CDC)
+- Other (please specify): ___________
+
+### How many serverless “applications” are you running in production? Applications should be defined as a collection of functions and services that form separately managed processes.
+[enter number]
+
+### What programming languages does your organization use to develop software?
+*Use scale: Currently using, Planning to Use in the next 12 months, Not Planning to Use*
+- .NET
+- C#
+- C++
+- F#
+- Golang
+- Java
+- JavaScript
+- Node.js
+- Perl
+- PHP
+- Python
+- Ruby
+- Rust
+- Swift
+- Other (please specify): _____________
+- Other (please specify): _____________
+
+### What programming languages does your organization use to develop serverless functions (FaaS)?
+*Use scale: Currently using, Planning to Use in the next 12 months, Not Planning to Use*
+- .NET
+- C#
+- C++
+- F#
+- Golang
+- Java
+- JavaScript/Node.js
+- Perl
+- PHP
+- Python
+- Ruby
+- Rust
+- Swift
+- Other (please specify): _____________
+- Other (please specify): _____________
+
+### How do you structure your serverless applications?
+- Mono-repo (i.e. one repository with multiple services/applications, deployed separately)
+- Nested stacks (i.e. multiple services/applications that have independent repos but are deployed together)
+- Each service is its own repo and stack and is deployed independently
+- Each service is its own repo and stack but has shared dependencies that are deployed together
+- Other - please explain: ______________
+ 
+### What percentage of your serverless functions are “single-purpose” that perform a small piece of discrete business logic?
+- 0%
+- 1-25%
+- 26-50%
+- 51-75%
+- 76-99%
+- 100%
+- Not Sure
+
+## Operations
+
+### Which services and/or tools do you use to monitor your serverless applications?
 - Epsagon
 - Dashbird
-- AWS CloudWatch
 - AWS CloudWatch ServiceLens
 - Loggly
 - CloudZero
@@ -129,19 +294,57 @@ Also, the questions below are in no particular order, so the final survey will f
 - AWS X-Ray
 - AppDynamics
 - Serverless Framework Pro
-- Data Dog
+- Datadog
 - New Relic
 - Lumigo
 - Splunk
-- Other: ____________
+- Other (please specify): ____________
+- None/Only using cloud provider’s default
 
-### 10. What security solution do you use for your serverless applications?
-- PureSec/Palo Alto Networks
-- Protego/Check Point
+### Which role in your organization generally decides on adopting new technologies such as serverless?
+- Developer / Software Engineer
+- Operations / DevOps 
+- Product / Team Lead
+- Architect
+- VP of Engineering
+- IT Management CTO / CIO / CISO
+- C-level (non-technical) 
+- Other (please specify): ____________
+
+## Security
+
+### How would you describe your serverless security posture?
+- We rely on the standard security features of our provider
+- We are utilizing additional security services available through our provider
+- We are utilizing third-party tools and/or services to enhance our security posture
+- Not sure
+
+### Do you believe your organization’s security posture has been improved by serverless?
+- Yes
+- No
+- Don’t know
+
+### What security solutions do you use for your serverless applications?
 - Aqua Security
-- Other: ______________
+- Intrinsic
+- Palo Alto Networks (PureSec)
+- Check Point (Protego)
+- Serverless Framework Pro
+- Snyk
+- Terraform Enterprise
+- Thundra
+- Twistlock
+- Other (please specify): ______________
+- None
 
-### 11. What are your main pain points when using serverless?
+### Does your organization create separately scoped roles for each serverless function?
+- Yes
+- No
+- Not Sure
+
+## General Serverless Experience
+
+### What are the top two pain points when using serverless? (Select two)
 - Latency (Cold Starts)
 - Security
 - Debugging
@@ -151,146 +354,177 @@ Also, the questions below are in no particular order, so the final survey will f
 - Cost
 - Platform Limitations (tmp folder size, duration, etc.)
 - GPU Support
-- Other:_____
+- Other (please specify): _____________
 
-### 12. Where do you hear about new updates and technologies related to serverless?
+### What are the _top three_ areas in which serverless architecture has had a POSITIVE impact on your software development life cycle?
+- Application performance
+- Control	
+- Cost of labor
+- Cost of resources
+- DevOps culture
+- Event-driven architectures
+- Flexibility of architecture
+- Flexibility of scaling
+- Flexibility of team responsibilities
+- Risk reduction
+- Portability
+- Security – runtime
+- Security – vulnerability management and compliance
+- Speed of development
+- Speed of deployment
+- Time to feature or lead time
+- Other (please specify): ___________
+
+
+### What are the top three areas in which serverless architecture has had a NEGATIVE impact on your software development life cycle?
+- Application performance
+- Control	
+- Cost of labor
+- Cost of resources
+- DevOps culture
+- Event-driven architectures
+- Flexibility of architecture
+- Flexibility of scaling
+- Flexibility of team responsibilities
+- Risk reduction
+- Portability
+- Security – runtime
+- Security – vulnerability management and compliance
+- Speed of development
+- Speed of deployment
+- Time to feature or lead time
+- Other (please specify): ___________
+
+
+### Did the recent announcement of AWS Lambda’s Provisioned Concurrency have any effect on your organization’s serverless use cases?
+- Yes, it has made new use cases possible for our organization
+- Yes, it has improved/enhanced our existing use cases
+- No, it has had no effect on existing use cases
+- We were unaware of it
+- We do not use AWS
+
+### Did the latest improvements to AWS Lambdas in VPCs have any effect on your organization’s serverless use cases?
+- Yes, it has made new use cases possible for our organization
+- Yes, it has improved/enhanced our existing use cases
+- No, it has had no effect on existing use cases
+- We were unaware of it
+- We do not use AWS
+
+### Has your organization tried serverless architecture and decided that it wasn’t a good fit?
+- Yes
+- No
+
+### What is your organization’s preferred method of compute for greenfield projects?
+- Bare metal
+- VM
+- Container
+- Functions
+- Other (please specify): _____________
+
+### What “features” are missing from serverless? (in order of importance)
+[Open-ended]
+
+## Serverless Education
+
+### Where do you hear about new updates and technologies related to serverless?
+- Blogs
+- Cloud Provider websites
 - Newsletters
 - Podcasts
-- Blogs
-- Serverless vendor websites/blogs
+- Serverless Vendor websites
 - Medium
 - Reddit
+- Forums
 - Tech News
 - Conferences and Meetups
 - Webinars
-- Other: _____
-
-### 13. What “serverless” databases do you currently use?
-- DynamoDB
-- Managed Cassandra
-- Google Cloud Store
-- FaunaDB
-- Aurora Serverless
-- CouchBase
-- Other: ____
-
-### 14. Which of the following use cases do you use serverless for?
-- REST APIs
-- GraphQL
-- ETL/Data Processing tasks
-- DevOps/Operational tasks
-- IoT
-- 3rd party services integration
-- Security automation
-- Single Page Applications (SPAs)
-- Chatbots
-- Edge computing
-- Other: ________
+- Other (please specify): ______________
 
 
-### 15. What do think about the amount of educational materials available for serverless?
-- Not nearly enough
-- Some, but very scattered
-- Some, but easily accessible
-- Enough, but scattered
-- Just enough, and easily accessible
-- Too much
-- No opinion
+### Please indicate whether you agree or disagree with the following statements regarding your primary cloud provider's quality and quantity of training materials/documentation?
+*Use scale: Agree, Disagree, No Opinion*
+- Documentation is complete and up-to-date
+- Documentation is well-organized and easy to find what I’m looking for
+- Concepts are explained with helpful examples
+- Example code is provided for my language of choice
+- Training materials (e.g. videos, webinars, etc.) are readily available
+- Additional content (e.g. blogs, whitepapers, etc.) are readily available
+- Content is available for all levels of experience
 
-### 16. How likely are you to build a serverless application in the next 6 months?
+### What type of activities best evangelize serverless?
+- Serverless-specific Conferences (e.g. ServerlessDays, Serverlessconf, etc.)
+- Live Coding/Demonstrations
+- Workshops
+- Webinars
+- Online Courses
+- Blogs
+- Other (please specify): _____________
+
+### What percentage of your developers have cloud certifications or equivalent training?
+- 0%
+- 1-5%
+- 6-10%
+- 11-20%
+- 21-30%
+- 31-40%
+- 41-50%
+- Greater than 50%
+- Don’t know
+
+## Planning
+
+### How likely is your organization to build a greenfield serverless application in the next 12 months?
 - Very likely
 - Somewhat likely
 - Somewhat unlikely
 - Very unlikely
 
-### 17. How would you define “multi-cloud”?
-- Running multiple copies of your application in different public cloud providers
-- Running different applications in separate public clouds
-- Running cloud agnostic applications that can be ported between clouds
-- Running applications that utilize different cloud/SaaS providers (e.g. Stripe, Twilio)
-- Other: ______
+### How likely is your organization to convert an existing (brownfield) application to serverless in the next 12 months?
+- Very likely
+- Somewhat likely
+- Somewhat unlikely
+- Very unlikely
 
-### 18. How many serverless applications are you running in production?
-[enter number]
+## Demographics
 
-### 19. Which roles in your organization decide on creating new services using serverless?
-- Developer
-- DevOps
-- Team Lead
-- Architect
-- VP of Engineering
-- CTO
-- Other:____
-
-### 20. How were you affected by AWS Lambda’s Provisioned Concurrency Announcement?
-- Not affected
-- Somewhat affected
-- It changed the way I work
-- It had a big impact on my job
-- I didn't know about it
-
-### 21. Did the latest improvements to AWS Lambdas in VPCs affect your opinion of Lambda and/or Serverless?
-- Not at all
-- Somewhat affected
-- Had a significant effect
-- Changed my mind
-- I wasn't aware of it
-
-### 22. What is the primary language your organization uses to develop serverless applications?
-- Node.js
-- Python
-- Go
-- Java
-- Ruby
-- PHP
-- C#
-- Other:____
-
-### 23. What other languages does your organization use to develop serverless applications?
-- Node.js
-- Python
-- Go
-- Java
-- Ruby
-- PHP
-- C#
-- Other:____
-
-
-### 24. How would you define your organization?
+### How would you classify your organization?
 - Enterprise
 - Medium-sized
 - Small business
-- Start up
-- Side project/bootstrapped
+- Funded Startup
+- Side project/bootstrapped startup
 
-
-### 25. How many employees are there in your organization?
+### How many employees are there in your organization?
 - Just me
 - 2-10
 - 11-50
 - 51-100
-- 101-200
-- 201-500
-- 501-1000
-- More than 1,000
+- 101-500
+- 501-1,000
+- 1,001-10,000
+- More than 10,000
+- Don’t know
 
-### 26. What is your title?
-[enter text]
+### Which category most closely defines your job role?
+- Developer / software engineer
+- Administrator / operations
+- Architect
+- Community manager / developer advocate
+- IT management, including CIO / CISO / CTO
+- C-level (non-technology) management
+- Marketing / PR
+- Other (please specify): ___________
 
-### 27. What is your company name? (not to be shared with results)
-[enter text]
-
-### 28. How long has your company/organization been in business?
+### How long has your company/organization been in business?
 - Less than a year
 - 1 to 2 years
 - 2 to 5 years
 - 5 to 10 years
 - More than 10 years
 
-### 29. In which industry is your business?
+### In which industry is your business?
 - Software & Internet
-- Retail
+- Retail / Consumer Goods
 - Media
 - Marketing and Advertising
 - Food and Beverage
@@ -298,18 +532,37 @@ Also, the questions below are in no particular order, so the final survey will f
 - Insurance
 - Automotive
 - Telecommunications
-- Health
+- Healthcare or Pharmaceuticals 
 - Education
 - Real Estate
 - Non-Profit
-- Law and Government
-- Manufacturing
-- Other:_____
+- Government
+- Manufacturing or Industrial
+- Energy or Utilities
+- Financial
+- Professional Services
+- Infotech: Cloud Native services
+- Infotech: On-premises services
+- Other (please specify): __________
 
-### 30. Does your company serve consumers, businesses, or both?
-- Consumers
-- Businesses
-- Both
+### What geographic regions is your organization located?
+- North America
+- South America
+- Europe
+- Africa or Middle East
+- East or Southeast Asia
+- South Asia
+- Australia, Oceania or Pacific Islands
 
-### 31. What features are missing from serverless?
-*Open-ended or should this be a list?*
+### How would you describe your organization’s product offerings?
+- B2B - Business-to-Business
+- B2C - Business-to-Consumer
+- C2C - Consumer-to-Consumer
+- C2B - Consumer-to-Business
+- Other (please specify): ___________
+
+### What is your company name? (not to be shared with results)
+[enter text] *(optional)*
+
+### What is your email? (to be entered for drawing)
+[enter text] *(optional)*
